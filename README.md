@@ -19,13 +19,15 @@ pip install --upgrade git+https://github.com/ORG/canlib.git@v0.1.1
 sudo ip link set can0 up type can bitrate 500000
 
 ## API
-Method	Description
-CANBus(channel="can0", interface="socketcan")	Opens the bus on creation.
-send_message(can_id, data)	Standard frame, 11-bit ID (0x000-0x7FF), up to 8 data bytes.
-send_extended_message(can_id, data)	Extended frame, 29-bit ID, up to 8 data bytes.
-receive_message(timeout=1.0)	Returns a can.Message, or None if nothing arrived in time.
-open()	Opens the bus (does nothing if already open).
-shutdown()	Releases the bus. Safe to call more than once.
+| Method | Description |
+| :--- | :---: |
+| **CANBus(channel="can0", interface="socketcan")** | Opens the bus on creation. | 
+| **send_message(can_id, data)** | Standard frame, 11-bit ID (0x000-0x7FF), up to 8 data bytes. |
+| **send_extended_message(can_id, data)** | Extended frame, 29-bit ID, up to 8 data bytes. |
+| **receive_message(timeout=1.0)** | Returns a can.Message, or None if nothing arrived in time. |
+| **open() ** | Opens the bus (does nothing if already open). |
+| **shutdown()**| Releases the bus. Safe to call more than once. |
+
 
 ## Usage
 ```python
