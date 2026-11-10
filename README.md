@@ -25,6 +25,15 @@ with CanBus(interface="socketcan", channel="can0") as bus:
     bus.send(arbitration_id=0x123, data=[1, 2, 3])
 ```
 
+Or alternatively (manually close the bus)
+'''python
+bus = CANBus("can0")
+try:
+    ...
+finally:
+    bus.shutdown()
+'''
+
 ## Development
 pip install -e ".[dev]"
 
