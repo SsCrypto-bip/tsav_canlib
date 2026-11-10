@@ -26,13 +26,13 @@ with CanBus(interface="socketcan", channel="can0") as bus:
 ```
 
 Or alternatively (manually close the bus)
-'''python
+```python
 bus = CANBus("can0")
 try:
     ...
 finally:
     bus.shutdown()
-'''
+```
 
 ## Development
 pip install -e ".[dev]"
