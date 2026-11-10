@@ -1,16 +1,16 @@
-   [build-system]
-   requires = ["setuptools>=68"]
-   build-backend = "setuptools.build_meta"
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
 
-   [project]
-   name = "tsav_canlib"
-   version = "0.1.0"
-   description = "CAN bus library for the FSAE vehicle"
-   readme = "README.md"
-   requires-python = ">=3.8"
-   dependencies = [
-       "python-can>=4.0",   # everything core.py imports
-   ]
+[project]
+name = "tsav_canlib"
+version = "0.1.0"
+description = "CAN bus library for the FSAE vehicle"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "python-can>=4.2",   # interface= keyword needs 4.2+
+]
 
-[tool.setuptools]
-py_modules = ["library"]
+[tool.setuptools.packages.find]
+where = ["src"]
