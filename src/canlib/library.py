@@ -1,5 +1,4 @@
-# Configurable CANBus base class 
-#Final check + Make sure theres proper shut down
+
 import can
 
 
@@ -57,8 +56,7 @@ class CANBus:
             self.shutdown()
             raise
 
-    
-    #Add new extended message class       
+      
     def send_extended_message(self, can_id: int, data: list):
         '''Send Extended CAN message:
         ARG: CAN ID 29-bits
@@ -82,7 +80,7 @@ class CANBus:
             print("Interrupt")
             self.shutdown()
             raise
-#
+
     def receive_message(self, timeout: float):
         '''Receive CAN message with timeout
         ARG: timeout in seconds
