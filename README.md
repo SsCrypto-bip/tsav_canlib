@@ -25,7 +25,7 @@ sudo ip link set can0 up type can bitrate 500000
 | **send_message(can_id, data)** | Standard frame, 11-bit ID (0x000-0x7FF), up to 8 data bytes. |
 | **send_extended_message(can_id, data)** | Extended frame, 29-bit ID, up to 8 data bytes. |
 | **receive_message(timeout=1.0)** | Returns a can.Message, or None if nothing arrived in time. |
-| **open() ** | Opens the bus (does nothing if already open). |
+| **open()** | Opens the bus (does nothing if already open). |
 | **shutdown()**| Releases the bus. Safe to call more than once. |
 
 
