@@ -12,5 +12,5 @@
        "python-can>=4.0",   # everything core.py imports
    ]
 
-   [tool.setuptools.packages.find]
-   where = ["src"]
+[tool.setuptools]
+py_modules = ["library"]
