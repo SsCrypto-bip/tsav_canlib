@@ -6,13 +6,13 @@ CANBUS Library
 CAN bus library for the TS FSAE.
 
 ## Install
-pip install git+https://github.com/ORG/canlib.git@v0.1.0
+pip install "git+https://github.com/SsCrypto-bip/tsav_canlib.git"
 
 Checking installation: 
-python -c "import canlib; print(canlib.__version__)"
+pip show tsav_canlib
 
 Upgrade to new versions:
-pip install --upgrade git+https://github.com/ORG/canlib.git@v0.1.1
+pip install --upgrade --force-reinstall "git+https://github.com/SsCrypto-bip/TSAVcanlib.git"
 
 
 ## Bring up the interface
