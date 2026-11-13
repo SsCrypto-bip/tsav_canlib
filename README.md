@@ -57,10 +57,6 @@ Closing the bus does not stop a motor. Control code should send a
 safe/zero command in its own `finally` block.
 
 
-## Development
-pip install -e ".[dev]"
-
-
 ## Layout 
 canlib/
 ├── pyproject.toml
