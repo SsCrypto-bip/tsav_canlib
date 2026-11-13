@@ -13,4 +13,4 @@ dependencies = [
 ]
 
 [tool.setuptools.packages.find]
-where = ["src/canlib"]
+where = ["src/canlib/"]
